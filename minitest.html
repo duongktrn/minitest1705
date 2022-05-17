@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>minitest1705</title>
+</head>
+<body>
+ <button onclick="tongchan()">Tổng số chẵn</button>
+</body>
+</html>
+<script>
+    function tongchan() {
+        let total = 0
+        let num = +prompt('số phần tử của mảng là : ')
+        let array = new Array(num)
+        for (i = 0; i < array.length; i++) {
+            array[i] = prompt('nhập phần tử thứ ' + (i+1))
+        }
+        for (j=0;j<array.length;j++){
+            if (array[j]%2==0){
+                total +=1
+            }
+        }
+        console.log(total)
+    }
+
+
+</script>
