@@ -9,20 +9,35 @@
 </body>
 </html>
 <script>
-    function tongchan() {
+/*    function tongchan() {
         let total = 0
         let num = +prompt('số phần tử của mảng là : ')
         let array = new Array(num)
         for (i = 0; i < array.length; i++) {
             array[i] = prompt('nhập phần tử thứ ' + (i+1))
-        }
-        for (j=0;j<array.length;j++){
-            if (array[j]%2==0){
+            if (array[i]%2==0){
                 total +=1
             }
         }
-        console.log(total)
-    }
+        document.write('tổng số chẵn trong mảng '+ '['+array+']'+'là: '+total )
 
+    }*/
+    let total = 0
+    let num2 = +prompt('nhập số phần tử')
+    let array2 = new Array(num2)
+    for (i=0;i<array2.length;i++){
+        array2[i] = prompt('nhập phần tử thứ ' + (i+1))
+    }
+    let arrayX = prompt('nhập phần tử để kiểm tra có tồn tại trong mảng')
+    for(j=0;j<i;j++){
+        if (arrayX == array2[j]) {
+            total +=1
+        }
+    }
+    if(total){
+  document.write('có '+total+'phần tử '+arrayX+' trong mảng '+'['+array2+']')
+    }else {
+        document.write('không tồn tại phần tử '+ arrayX+' trong mảng '+'['+array2+']')
+    }
 
 </script>
